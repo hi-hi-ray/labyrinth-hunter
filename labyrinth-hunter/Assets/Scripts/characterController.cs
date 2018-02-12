@@ -5,7 +5,7 @@ using UnityEngine;
 public class characterController : MonoBehaviour
 {
 
-    public float speed = 10.0f;
+    public float speed = 350.0f;
 
     // Use this for initialization
     void Start()
@@ -26,5 +26,10 @@ public class characterController : MonoBehaviour
         if (Input.GetKeyDown("escape"))
             Cursor.lockState = CursorLockMode.None;
 
+        if (Input.GetKey(KeyCode.LeftShift))
+            speed = 900.0f;
+
+        if (!(Input.GetKey(KeyCode.LeftShift)))
+            speed = 350.0f;
     }
 }
