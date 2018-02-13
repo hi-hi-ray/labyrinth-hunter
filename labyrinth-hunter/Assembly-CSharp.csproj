@@ -53,9 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\camMouseLook.cs" />
      <Compile Include="Assets\Scripts\characterController.cs" />
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/Programming/Faculdade/IA/labyrinth-hunter/labyrinth-hunter/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Scripts\chaseMinotaur.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
