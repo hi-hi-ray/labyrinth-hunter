@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum AnimationStates{
 	WALK,
@@ -12,52 +13,57 @@ public enum AnimationStates{
 
 public class AnimationMinos : MonoBehaviour {
 
-	public Animator animator;
-    private AudioScript audioMino = new AudioScript();
+    public Animator anim;
 
-    public void PlayAnimation (AnimationStates statesAnimation) {
-
-		switch (statesAnimation) {
-		    case AnimationStates.IDDLE:
-			    {
-				    StopAnimations ();
-				    animator.SetBool ("inIdle", true);
-			    }
-			    break;
-		    case AnimationStates.WALK:
-			    {
-				    StopAnimations ();
-				    animator.SetBool ("inWalk", true);
-			    }
-			    break;
-		    case AnimationStates.RUN:
-			    {
-				    StopAnimations ();
-				    animator.SetBool ("inRun", true);
-			    }
-			    break;
-            case AnimationStates.SHOUT:
-			    {
-                    StopAnimations();
-                    animator.SetBool("inShout", true);
-                    audioMino.PlayMinoSFX4();
-                }
-                break;
-            case AnimationStates.ATTACK:
-			    {
-                    StopAnimations();
-                    animator.SetBool("inAttack", true);
-                }
-			    break;
-		}
+    void Start()
+    {
+        //How quickly you want your character to move there
+        PlayAnimationIddle();
     }
 
-	void StopAnimations(){
-		animator.SetBool ("inRun", false);
-		animator.SetBool ("inWalk", false);
-		animator.SetBool ("inIdle", false);
-        animator.SetBool("inShout", false);
-        animator.SetBool("inAttack", false);
+    // Update is called once per frame
+    void Update()
+    {
+        PlayAnimationShout();
     }
 
+    public void PlayAnimationIddle()
+    {
+        StopAnimations();
+        anim.SetBool("inIdle", true);
+    }
+
+    public void PlayAnimationWalk()
+    {
+        StopAnimations();
+        anim.SetBool("inWalk", true);
+    }
+
+    public void PlayAnimationRun()
+    {
+        StopAnimations();
+        anim.SetBool("inRun", true);
+    }
+
+    public void PlayAnimationShout()
+    {
+        StopAnimations();
+        anim.SetBool("inShout", true);
+    }
+
+    public void PlayAnimationAttack()
+    {
+        StopAnimations();
+        anim.SetBool("inAttack", true);
+    }
+
+    private void StopAnimations()
+    {
+        anim.SetBool("inRun", false);
+        anim.SetBool("inWalk", false);
+        anim.SetBool("inIdle", false);
+        anim.SetBool("inShout", false);
+        anim.SetBool("inAttack", false);
+    }
+    
 }﻿

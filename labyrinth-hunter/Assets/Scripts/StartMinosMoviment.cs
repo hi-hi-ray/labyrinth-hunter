@@ -1,17 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+
 
 public class StartMinosMoviment : MonoBehaviour {
 
-    private AnimationMinos animaMinos = new AnimationMinos();
 
-    // Use this for initialization
-    void Start () {
+    void Start()
+    {
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void Update()
+    {
+        
+    }
 }
