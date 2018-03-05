@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public enum AnimationStates{
@@ -14,17 +15,25 @@ public enum AnimationStates{
 public class AnimationMinos : MonoBehaviour {
 
     public Animator anim;
+    public Transform player;
+    public Vector3 destination;
+    public NavMeshAgent agent;
 
     void Start()
     {
-        //How quickly you want your character to move there
         PlayAnimationIddle();
+        agent = GetComponent<NavMeshAgent>();
+        destination = agent.destination;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        PlayAnimationShout();
+        if (Vector3.Distance(destination, player.position) > 1.0f)
+        {
+            destination = player.position;
+            agent.destination = destination;
+            PlayAnimationWalk();
+        }
     }
 
     public void PlayAnimationIddle()
@@ -65,5 +74,7 @@ public class AnimationMinos : MonoBehaviour {
         anim.SetBool("inShout", false);
         anim.SetBool("inAttack", false);
     }
+
+
     
 }﻿

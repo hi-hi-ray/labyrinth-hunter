@@ -55,7 +55,6 @@
      <Compile Include="Assets\Scripts\AudioScript.cs" />
      <Compile Include="Assets\Scripts\CamMouseLook.cs" />
      <Compile Include="Assets\Scripts\characterController.cs" />
-     <Compile Include="Assets\Scripts\StartMinosMoviment.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
