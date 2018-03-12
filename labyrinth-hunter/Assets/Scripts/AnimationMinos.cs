@@ -16,24 +16,21 @@ public class AnimationMinos : MonoBehaviour {
 
     public Animator anim;
     public Transform player;
-    public Vector3 destination;
     public NavMeshAgent agent;
 
     void Start()
     {
         PlayAnimationIddle();
         agent = GetComponent<NavMeshAgent>();
-        destination = agent.destination;
     }
 
     void Update()
     {
-        if (Vector3.Distance(destination, player.position) > 1.0f)
-        {
-            destination = player.position;
-            agent.destination = destination;
-            PlayAnimationWalk();
-        }
+               
+            
+			agent.SetDestination(player.position);
+            
+        
     }
 
     public void PlayAnimationIddle()
