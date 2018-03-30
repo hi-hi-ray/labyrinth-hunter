@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camMouseLook : MonoBehaviour {
+public class CamMouseLook : MonoBehaviour {
 
     Vector2 mouseLook;
     Vector2 smoothV;
