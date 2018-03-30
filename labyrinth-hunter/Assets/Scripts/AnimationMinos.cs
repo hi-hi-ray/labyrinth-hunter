@@ -4,36 +4,54 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-public enum AnimationStates{
+/*public enum AnimationStates{
 	WALK,
 	RUN,
 	IDDLE,
     SHOUT,
     ATTACK,
-}
+}*/
 
 public class AnimationMinos : MonoBehaviour {
 
-    public Animator anim;
-    public Transform player;
-    public NavMeshAgent agent;
 
-    void Start()
+    [SerializeField]
+    Transform _destination;
+
+    //public Animator anim;
+    NavMeshAgent _navMeshAgent;
+
+    // Use this for initialization
+    void Start ()
     {
-        PlayAnimationIddle();
-        agent = GetComponent<NavMeshAgent>();
-    }
+        _navMeshAgent = this.GetComponent<NavMeshAgent>();
+        
+        if(_navMeshAgent == null)
+        {
+            Debug.LogError("The nav mesh agent component is not attached to " + gameObject.name);
+        }	
+        else
+        {
+            SetDestination();
+        }
+	}
 
     void Update()
     {
-               
-            
-			agent.SetDestination(player.position);
-            
-        
+        SetDestination();
     }
 
-    public void PlayAnimationIddle()
+    private void SetDestination()
+    {
+        if(_destination != null)
+        {
+            Vector3 targetVector = _destination.transform.position;
+            _navMeshAgent.SetDestination(targetVector);
+        }
+    }
+
+
+    /*public void PlayAnimationIddle()
     {
         StopAnimations();
         anim.SetBool("inIdle", true);
@@ -70,7 +88,7 @@ public class AnimationMinos : MonoBehaviour {
         anim.SetBool("inIdle", false);
         anim.SetBool("inShout", false);
         anim.SetBool("inAttack", false);
-    }
+    }*/
 
 
     
