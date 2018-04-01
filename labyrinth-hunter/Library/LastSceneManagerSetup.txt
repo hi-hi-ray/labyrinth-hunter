@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/labyrinth-hunter.unity
+- path: Assets/NOSSONAODELS/labyrinth-hunter.unity
   isLoaded: 1
   isActive: 1
