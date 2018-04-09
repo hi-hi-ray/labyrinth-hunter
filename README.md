@@ -49,7 +49,7 @@
 
 ### Author: Raysa Dutra e [Herik Tedesco](https://github.com/heriktedesco)
 
-### Date: 9 Apr 2017
+### Date: 9 Apr 2018
 
 ### Language: Unity with C#
 ### Unity Store Assets: The assets used in the project were those shown in the image below.
