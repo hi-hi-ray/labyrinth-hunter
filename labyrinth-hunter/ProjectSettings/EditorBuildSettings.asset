@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/GameOver.unity
-    guid: 33cc7f77837a313498ac1c7de0f0fb07
+    path: Assets/NewGame.unity
+    guid: 8bf0a6d66ec2d844caf6a5fcdda398d9
   - enabled: 1
     path: Assets/labyrinth-hunter.unity
     guid: 17aaa9fd65d53134ca3a5935caadb097
+  - enabled: 1
+    path: Assets/GameOver.unity
+    guid: 33cc7f77837a313498ac1c7de0f0fb07
+  - enabled: 1
+    path: Assets/WinScreen.unity
+    guid: a0de3ee2accd8534e93112f63ba777b3
