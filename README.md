@@ -20,7 +20,7 @@
   
 ![Image of assets](https://github.com/hi-hi-ray/labyrinth-hunter/blob/master/images-doc/Store%20used.JPG)
 
-### Inteligência artifical: O inigmigo utiliza o NavMesh para tentar aplicar a estrategia de Seek and Arrive.
+### Inteligência artifical: O inimigo utiliza o NavMesh para tentar aplicar a estrategia de Seek and Arrive.
 
 ### Objetivo: Labyrinth Hunter é um jogo de terror, onde você tem que fugir dos inimigos e pegar todos os objetos do mapa.
 
@@ -56,7 +56,7 @@
 
 ![Image of assets](https://github.com/hi-hi-ray/labyrinth-hunter/blob/master/images-doc/Store%20used.JPG)
 
-### Artificial Intelligence: The use of NavMesh to use a Search and Arrival Strategy.
+### Artificial Intelligence: The enemy uses NavMesh to try to apply the Seek and Arrive strategy.
 
 ### Objective: Labyrinth Hunter is a horror game where you have to escape from enemies and grab all the objects on the map.
 
