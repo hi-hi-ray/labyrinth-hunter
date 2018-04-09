@@ -5,5 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/_CompletedAssets/Scenes/Level 01 5.x.unity
+    path: Assets/GameOver.unity
+    guid: 33cc7f77837a313498ac1c7de0f0fb07
+  - enabled: 1
+    path: Assets/labyrinth-hunter.unity
+    guid: 17aaa9fd65d53134ca3a5935caadb097

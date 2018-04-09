@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NavMeshEnemy : MonoBehaviour {
@@ -12,20 +13,24 @@ public class NavMeshEnemy : MonoBehaviour {
     //public Animator anim;
     NavMeshAgent _navMeshAgent;
 
+    bool playerInRange;
+    GameObject player;
+
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();
-        
-        if(_navMeshAgent == null)
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        if (_navMeshAgent == null)
         {
             Debug.LogError("The nav mesh agent component is not attached to " + gameObject.name);
-        }	
+        }
         else
         {
             SetDestination();
         }
-	}
+    }
 
     void Update()
     {
@@ -34,10 +39,19 @@ public class NavMeshEnemy : MonoBehaviour {
 
     private void SetDestination()
     {
-        if(_destination != null)
+        if (_destination != null)
         {
             Vector3 targetVector = _destination.transform.position;
             _navMeshAgent.SetDestination(targetVector);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject == player)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+    
 }﻿
