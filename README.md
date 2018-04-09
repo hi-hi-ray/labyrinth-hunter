@@ -16,7 +16,7 @@
 
 ### Linguagem: Unity com C#
 
-### Unity Store Assets: Os assets utilizados no projeto foram os que estão disposto na imagem abaixo:
+### Unity Store Assets: Os assets utilizados no projeto foram os que estão disposto na imagem abaixo.
   
 ![Image of assets](https://github.com/hi-hi-ray/labyrinth-hunter/blob/master/images-doc/Store%20used.JPG)
 
@@ -52,8 +52,20 @@
 ### Date: 9 Apr 2017
 
 ### Language: Unity with C#
+### Unity Store Assets: The assets used in the project were those shown in the image below.
 
-### Objective: Alfred is an application for Android, which has as main goal help event organizers to plan better their events.
+![Image of assets](https://github.com/hi-hi-ray/labyrinth-hunter/blob/master/images-doc/Store%20used.JPG)
+
+### Artificial Intelligence: The use of NavMesh to use a Search and Arrival Strategy.
+
+### Objective: Labyrinth Hunter is a horror game where you have to escape from enemies and grab all the objects on the map.
+
+### Game History: Cleydson is a maze specialist trained at Harvard. He was on his way to Greece, when his plane crashed on an unknown island, as he was the only survivor, he went to get help, however, he fell into a hole and went into the maze of skin creatures. Legend has it that you should never touch a skin creature, because your soul is sucked and you become one of them and also in the same legend it is said that this labyrinth has many bars of gold.
+
+### Controls:
+- Walking: Arrow keys or (w, a, s, d)
+- Run: Arrow keys or (w, a, s, d) + Shift
+- Look Around: Mouse
 
 #### I dedicate to my friends, my family, my dog Jorge and my future husband.
 
