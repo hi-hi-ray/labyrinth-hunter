@@ -16,10 +16,21 @@
 
 ### Linguagem: Unity com C#
 
+### Unity Store Assets: Os assets utilizados no projeto foram os que estão disposto na imagem abaixo:
+  
+![Image of assets](https://github.com/hi-hi-ray/labyrinth-hunter/blob/master/images-doc/Store%20used.JPG)
+
+### Inteligência artifical: O inigmigo utiliza o NavMesh para tentar aplicar a estrategia de Seek and Arrive.
+
 ### Objetivo: Labyrinth Hunter é um jogo de terror, onde você tem que fugir dos inimigos e pegar todos os objetos do mapa.
 
-### História do Jogo:
+### História do Jogo: O Cleydson é um especialista de labirintos formado em Harvard. Ele estava a caminho da Grécia, quando o seu avião caiu em uma ilha desconhecida, como ele foi o único sobrevivente, ele foi buscar ajuda, porém, ele caiu em um buraco e foi parar no labirinto das criaturas de pele. Reza a lenda que nunca deve-se encostar em uma criatura de pele, pois sua alma é sugada e você se torna um deles e também na mesma lenda fala-se que esse labirinto possui muitas barras de ouros. 
 
+### Controles: 
+  - Andar: Setas ou (w, a, s, d)
+  - Correr: Setas ou (w, a, s, d) + Shift
+  - Olhar em Volta: Mouse
+  
 #### Dedico aos meus amigos, a minha família ao meu cachorro Jorge e ao meu futuro marido ruivo.
 
 ##### O aplicativo está dentro da pasta "labyrinth-hunter".
