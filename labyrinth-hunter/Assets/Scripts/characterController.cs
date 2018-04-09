@@ -5,7 +5,8 @@ using UnityEngine;
 public class characterController : MonoBehaviour
 {
 
-    public float speed = 350.0f;
+    public float speed = 300.0f;
+
 
     // Use this for initialization
     void Start()
@@ -30,6 +31,6 @@ public class characterController : MonoBehaviour
             speed = 900.0f;
 
         if (!(Input.GetKey(KeyCode.LeftShift)))
-            speed = 350.0f;
+            speed = 300.0f;
     }
 }
